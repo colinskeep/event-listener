@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
-const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/${process.env.DB_NAME}`, {useNewUrlParser: true}`;
+const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/${process.env.DB_NAME}`;
 const pipeline = [
   {
     $project: { documentKey: false }
